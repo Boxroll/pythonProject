@@ -7,21 +7,20 @@ def main(input_str: str) -> str:
 
     if a > 10 or c > 10:
         return "Число должно быть меньше 10"
-    elif a <= 1 or c <= 1:
+    elif a < 0 or c < 0:
         return "Числа должны быть положительными"
-    elif b == "+":
-        return str(a + c)
-    elif b == "-":
-        return str(a - c)
-    elif b == "/":
-        return str(a // c)
     elif c == 0:
             return "Делить на ноль нельзя"
+    elif b == "+":
+        return int(a + c)
+    elif b == "-":
+        return int(a - c)
+    elif b == "/":
+        return int(a // c)
     elif b == "*":
-        return str(a * c)
+        return int(a * c)
     else:
         return "Ошибка ввода"
 I = input()
 result = main(I)
 print("Результат:", result)
-
