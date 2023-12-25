@@ -1,7 +1,7 @@
 print(" Калькулятор  ")
 print("Пример : 2 + 3")
 
-def main(input_str: str) -> str:
+def main(input_str: str) -> int:
     a, b, c = input_str.split()
     a, c = int(a), int(c)
 
